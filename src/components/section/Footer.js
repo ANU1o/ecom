@@ -6,6 +6,28 @@ const Footer = () => {
   return (
     <footer className="mt-auto bg-secondary p-5" data-bs-theme="dark">
       <Row className="align-items-center justify-content-center">
+        <Col
+          lg
+          xs="12"
+          className="mb-3 align-self-center text-start d-block d-lg-none text-lg-center"
+        >
+          <Navbar.Brand className="text-primary ">
+            <span className="text-light fw-bold">
+              <i className="fa-solid fa-store"></i>E
+            </span>
+            COM
+          </Navbar.Brand>
+          <p className="text-muted">
+            Made by{" "}
+            <Link
+              to="https://anu1o.netlify.app"
+              target="_blank"
+              className="anufont"
+            >
+              ANU1o
+            </Link>
+          </p>
+        </Col>
         <Col lg xs="12" className="mb-3">
           <div>
             <h5 className="text-primary">Pages</h5>
@@ -17,7 +39,7 @@ const Footer = () => {
         <Col
           lg
           xs="12"
-          className="mb-3 align-self-center text-start text-lg-center"
+          className="mb-3 align-self-center text-start text-lg-center d-none d-lg-block"
         >
           <Navbar.Brand className="text-primary ">
             <span className="text-light fw-bold">
